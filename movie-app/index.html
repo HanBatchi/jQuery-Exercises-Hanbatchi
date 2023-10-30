@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie App!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Movie App!</h1>
+<form id="movies-form">
+  <input type="text" placeholder="Enter Movie Title" id="title" required minlength = "2">
+  <input type="number" placeholder="Enter rating (0-10)" id="rating" required-min = "0" max="10">  
+  <button id="submit-button">Submit Movie</button>
+</form>
+<div id="movie-list">
+  <h2>Movie List</h2> 
+  <button id="sort-title-asc" class="sort-buttons">Sort by title (A-Z)</button>
+  <button id="sort-title-desc" class="sort-buttons">Sort by title (Z-A)</button>
+  <button id="sort-rating-asc" class="sort-buttons">Sort by Rating(Low to High)</button>
+  <button id="sort-rating-desc" class="sort-buttons">Sort by Rating(High to Low)</button>
+  <ul id="movies"></ul>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
